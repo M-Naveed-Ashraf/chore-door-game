@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- fontAwesome -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <img src="https://content.codecademy.com/projects/chore-door/images/logo.svg" alt="">
+    </div>
+    <div class="title-row">
+        <img src="https://content.codecademy.com/projects/chore-door/images/star.svg" alt="">
+        <h3>Instructions</h3>
+        <img src="https://content.codecademy.com/projects/chore-door/images/star.svg" alt="">
+    </div>
+    <div class="instructions-list d-flex justify-content-center">
+        <ol>
+            <li>Hiding behind one of these doors is the ChoreBot.</li>
+            <li>Your mission is to open all of the doors without running into the ChoreBot.</li>
+            <li>If you manage to avoid the ChoreBot until the very last door, you win!</li>
+            <li>See if you can score a winning streak!</li>
+        </ol>
+    </div>
+    <div class="door-row d-flex justify-content-center mt-4">
+        <img id="door1" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="">
+        <img id="door2" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="">
+        <img id="door3" class="door-frame" src="https://content.codecademy.com/projects/chore-door/images/closed_door.svg" alt="">
+    </div>
+
+    <div id="button" class="d-flex justify-content-center mt-2">
+        <button class="btn btn-info p-3">Good Luck! Start</button>
+    </div>
+    <div class="d-flex flex-row justify-content-center my-2">
+        <h5 class="mr-5 mt-2 text-white">Current Streak:</h5>
+        <h5 class="mt-2 text-white">Best Streak:</h5>
+    </div>
+    <div class=" streak d-flex flex-row justify-content-center my-3">
+        <div class="mr-5 mt-2 d-flex flex-column justify-content-center"><span id="current-Streak">0</span></div>
+        <div class="ml-5 mt-2 d-flex flex-column justify-content-center"><span id="best-Streak">0</span></div>
+    </div>
+        
+    <!-- custome javaScript -->
+    <script src="./main.js"></script>
+</body>
+</html>

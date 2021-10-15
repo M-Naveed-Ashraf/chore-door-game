@@ -1,0 +1,60 @@
+body {
+    background-color: #010165;
+    margin: 0px;
+  }
+
+  .header {
+      background-color: #00ffff;
+      text-align: center;
+  }
+
+  .title-row {
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  .title-row > h3 {
+      font-family: 'Work Sans';
+      font-weight: lighter;
+      display: inline;
+      color: #00ffff;
+      
+  }
+
+  /* done via bootstrap classes */
+  
+/* .instructions-list {
+    display: flex;
+    justify-content: center;
+} */
+
+ol {
+    list-style: none;
+}
+
+ol> li::before {
+    content: counter(li);
+    color: #00ffff;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+li{
+    counter-increment: li;
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+}
+
+.door-frame {
+    cursor: pointer;
+    padding: 10px;
+}
+
+  .streak > div {
+    text-align: center;
+    font-size: 2rem;
+    height: 80px;
+    width: 80px;
+    background-color: #00ffff;
+  }
