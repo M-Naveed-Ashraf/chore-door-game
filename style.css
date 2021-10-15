@@ -58,3 +58,8 @@ li{
     width: 80px;
     background-color: #00ffff;
   }
+
+  .footer{
+      text-align: center;
+      color: orangered;
+  }
